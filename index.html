@@ -7,60 +7,62 @@
     <title>Astro</title>
   </head>
   <body>
-    <main>
-      <header>
-        <div class="content">
-          <div class="logo">
-            <img src="./assets/AstroIcon.svg" alt="logo astro" />
-          </div>
-          <nav>
-            <ul>
-              <li>Documentation</li>
-              <li>Blog</li>
-              <li>
-                Showcase
-                <svg
-                  fill="currentColor"
-                  height="800px"
-                  width="800px"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 407.437 407.437"
-                  xml:space="preserve"
-                >
-                  <polygon
-                    points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
-                  />
-                </svg>
-              </li>
-              <li>
-                Community
-                <svg
-                  fill="currentColor"
-                  height="800px"
-                  width="800px"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 407.437 407.437"
-                  xml:space="preserve"
-                >
-                  <polygon
-                    points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
-                  />
-                </svg>
-              </li>
-            </ul>
-          </nav>
-          <div class="logo-github">
-            <img src="./assets/GithubIcon.svg" alt="logo github" />
-          </div>
+    <header>
+      <div class="content">
+        <div class="logo">
+          <img src="./assets/AstroIcon.svg" alt="logo astro" />
         </div>
-      </header>
+        <nav>
+          <ul>
+            <li>Documentation</li>
+            <li>Blog</li>
+            <li>
+              Showcase
+              <svg
+                fill="currentColor"
+                height="800px"
+                width="800px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 407.437 407.437"
+                xml:space="preserve"
+              >
+                <polygon
+                  points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
+                />
+              </svg>
+            </li>
+            <li>
+              Community
+              <svg
+                fill="currentColor"
+                height="800px"
+                width="800px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 407.437 407.437"
+                xml:space="preserve"
+              >
+                <polygon
+                  points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
+                />
+              </svg>
+            </li>
+          </ul>
+        </nav>
+        <div class="logo-github">
+          <img src="./assets/GithubIcon.svg" alt="logo github" />
+        </div>
+      </div>
+    </header>
+    <main>
       <section class="main-content">
+        <img class="background" src="./assets/fondo-main.webp" />
+
         <a class="version-astro" href="#">
           <span class="version">Astro 5.5</span>
           Available now! ->
@@ -182,22 +184,24 @@
         <article class="options">
           <section>
             <div class="icon">
-              <svg
-                class="server"
-                width="1em"
-                height="1em"
-                class="size-5 lg:size-7"
-                data-astro-cid-rreterqb="true"
-                data-icon="ri:server-line"
-              >
-                <symbol id="ai:ri:server-line" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M5 11h14V5H5zm16-7v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1m-2 9H5v6h14zM7 15h3v2H7zm0-8h3v2H7z"
-                  ></path>
-                </symbol>
-                <use href="#ai:ri:server-line"></use>
-              </svg>
+              <div class="filled">
+                <svg
+                  class="server"
+                  width="1em"
+                  height="1em"
+                  class="size-5 lg:size-7"
+                  data-astro-cid-rreterqb="true"
+                  data-icon="ri:server-line"
+                >
+                  <symbol id="ai:ri:server-line" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M5 11h14V5H5zm16-7v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1m-2 9H5v6h14zM7 15h3v2H7zm0-8h3v2H7z"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:ri:server-line"></use>
+                </svg>
+              </div>
             </div>
             <h4 class="title">Server-First</h4>
             <p class="description">
@@ -208,22 +212,24 @@
           </section>
           <section>
             <div class="icon">
-              <svg
-                class="document"
-                width="1em"
-                height="1em"
-                class="size-5 lg:size-7"
-                data-astro-cid-rreterqb="true"
-                data-icon="ri:file-list-3-line"
-              >
-                <symbol id="ai:ri:file-list-3-line" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M19 22H5a3 3 0 0 1-3-3V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12h4v4a3 3 0 0 1-3 3m-1-5v2a1 1 0 1 0 2 0v-2zm-2 3V4H4v15a1 1 0 0 0 1 1zM6 7h8v2H6zm0 4h8v2H6zm0 4h5v2H6z"
-                  ></path>
-                </symbol>
-                <use href="#ai:ri:file-list-3-line"></use>
-              </svg>
+              <div class="filled">
+                <svg
+                  class="document"
+                  width="1em"
+                  height="1em"
+                  class="size-5 lg:size-7"
+                  data-astro-cid-rreterqb="true"
+                  data-icon="ri:file-list-3-line"
+                >
+                  <symbol id="ai:ri:file-list-3-line" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M19 22H5a3 3 0 0 1-3-3V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12h4v4a3 3 0 0 1-3 3m-1-5v2a1 1 0 1 0 2 0v-2zm-2 3V4H4v15a1 1 0 0 0 1 1zM6 7h8v2H6zm0 4h8v2H6zm0 4h5v2H6z"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:ri:file-list-3-line"></use>
+                </svg>
+              </div>
             </div>
             <h4 class="title">Content-Driven</h4>
             <p class="description">
@@ -234,22 +240,24 @@
           </section>
           <section>
             <div class="icon">
-              <svg
-                class="bento"
-                width="1em"
-                height="1em"
-                class="size-5 lg:size-7"
-                data-astro-cid-rreterqb="true"
-                data-icon="ri:dashboard-line"
-              >
-                <symbol id="ai:ri:dashboard-line" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M14 21a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1zM4 13a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1zm5-2V5H5v6zM4 21a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1zm1-2h4v-2H5zm10 0h4v-6h-4zM13 4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1zm2 1v2h4V5z"
-                  ></path>
-                </symbol>
-                <use href="#ai:ri:dashboard-line"></use>
-              </svg>
+              <div class="filled">
+                <svg
+                  class="bento"
+                  width="1em"
+                  height="1em"
+                  class="size-5 lg:size-7"
+                  data-astro-cid-rreterqb="true"
+                  data-icon="ri:dashboard-line"
+                >
+                  <symbol id="ai:ri:dashboard-line" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M14 21a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1zM4 13a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1zm5-2V5H5v6zM4 21a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1zm1-2h4v-2H5zm10 0h4v-6h-4zM13 4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1zm2 1v2h4V5z"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:ri:dashboard-line"></use>
+                </svg>
+              </div>
             </div>
             <h4 class="title">Customizable</h4>
             <p class="description">
