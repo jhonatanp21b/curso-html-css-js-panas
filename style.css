@@ -1,0 +1,240 @@
+/* Nesting o anidamiento */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+  font-family: Obviously;
+  src: url('./assets/fonts/Obviously.woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #0d0f14; */
+  background-color: rgb(6 9 19);
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header */
+
+header {
+  background-color: rgba(0, 0, 0, 0.234);
+  margin-bottom: 100px;
+
+  .content {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo img {
+      width: 200px;
+    }
+
+    .logo-github img {
+      width: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      color: #bfc1c9;
+      font-weight: 300;
+
+      li svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+/* Main */
+
+main {
+  background: url('./assets/fondo-main.webp');
+  background-repeat: no-repeat;
+  background-position:  center -600px;
+  background-size: 90%;
+
+  /* Main content */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+    h1 {
+      font-family: Obviously;
+      font-weight: 500;
+      width: 700px;
+      font-size: 48px;
+      line-height: 50px;
+    }
+
+    p {
+      font-family: "Inter";
+      font-size: 18px;
+      width: 400px;
+      margin: 20px 0;
+      color: #bfc1c9;
+    }
+
+    .started {
+      color: #000;
+      background-color: #fff;
+      border: none;
+      padding: 10px 100px;
+      border-radius: 999999px;
+      text-decoration: none;
+    }
+
+    .version-astro {
+      background-color: rgba(38, 38, 38, 0.47);
+      text-decoration: none;
+      color: #fff;
+      padding: 0 20px 0 0;
+      border-radius: 999999px;
+      overflow: hidden;
+      font-size: 14px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      .version {
+        display: inline-block;
+        padding: 8px 10px;
+        /* background: linear-gradient(posicion, color1, color2); */
+        background: linear-gradient(to top right, #1321AC, #881ABD);
+        border-radius: 999999px;
+        margin-right: 10px;
+      }
+    }
+
+    .command {
+      background-color: rgba(38, 38, 38, 0.47);
+      padding: 8px 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      color: rgb(191 193 201);
+      font-size: 14px;
+
+      svg {
+        width: 22px;
+        height: 22px;
+
+        &:nth-child(1) {
+          width: 15px;
+          height: 15px;
+          transform: rotate(270deg);
+        }
+      }
+
+      /* svg:nth-child(1) {
+        width: 15px;
+        height: 15px;
+        transform: rotate(270deg);
+      } */
+    }
+
+  }
+
+  /* sponsor logos */
+}
+
+/* sponsors logos */
+
+main .sponsors {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+main .sponsors h3 {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+main .sponsors .sponsors-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+main .sponsors .sponsors-logos svg {
+  width: 130px;
+  /* height: 140px; */
+}
+
+main .sponsors .sponsors-logos svg:nth-child(5) {
+  width: 200px;
+}
+
+
+/* what-astro */
+
+main .what-astro {
+  /* border: 1px solid red; */
+  max-width: 1200px;
+  margin: auto;
+}
+
+main .what-astro h2 {
+  font-family: Obviously;
+  font-size: 36px;
+  width: 980px;
+  font-weight: lighter;
+}
+
+main .what-astro h2 .astro {
+  font-weight: 500;
+}
+
+main .what-astro .options {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 150px;
+}
+
+main .what-astro .options section .icon {
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .what-astro .options section:nth-child(1) .icon {
+  background-color: rgb(19, 61, 116);
+}
+
+main .what-astro .options section:nth-child(2) .icon {
+  background-color: rgb(234, 34, 97);
+}
+
+main .what-astro .options section:nth-child(3) .icon {
+  background-color: rgb(236, 195, 30);
+}
+
+main .what-astro .options .icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Main content */
