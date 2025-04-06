@@ -1,9 +1,9 @@
 /* Nesting o anidamiento */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 @font-face {
   font-family: Obviously;
-  src: url('./assets/fonts/Obviously.woff2');
+  src: url("./assets/fonts/Obviously.woff2");
 }
 
 * {
@@ -17,7 +17,21 @@ body {
   background-color: rgb(6 9 19);
   color: white;
   overflow-x: hidden;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-gradient {
+  width: max-content;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(66.77deg, #d83333, #f041ff) !important;
+}
+
+.paragraph {
+  color: #bfc1c9;
+  font-weight: lighter;
+  line-height: 25px;
 }
 
 /* Header */
@@ -59,7 +73,6 @@ header {
 /* Main */
 
 main {
-
   /* Main content */
   .main-content {
     display: flex;
@@ -81,7 +94,6 @@ main {
 
       width: 2353px;
       object-fit: cover;
-
     }
 
     h1 {
@@ -126,7 +138,7 @@ main {
         display: inline-block;
         padding: 8px 10px;
         /* background: linear-gradient(posicion, color1, color2); */
-        background: linear-gradient(to top right, #1321AC, #881ABD);
+        background: linear-gradient(to top right, #1321ac, #881abd);
         border-radius: 999999px;
         margin-right: 10px;
       }
@@ -159,7 +171,6 @@ main {
         transform: rotate(270deg);
       } */
     }
-
   }
 
   /* sponsor logos */
@@ -194,7 +205,6 @@ main .sponsors .sponsors-logos svg:nth-child(5) {
   width: 200px;
 }
 
-
 /* what-astro */
 
 main .what-astro {
@@ -203,11 +213,17 @@ main .what-astro {
   margin: auto;
 }
 
+main .what-astro h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 main .what-astro h2 {
   font-family: Obviously;
   font-size: 36px;
   width: 980px;
   font-weight: lighter;
+  line-height: 40px;
 }
 
 main .what-astro h2 .astro {
@@ -218,8 +234,8 @@ main .what-astro .options {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 150px;
-  margin-top: 30px;
+  gap: 120px;
+  margin-top: 25px;
 }
 
 main .what-astro .options section .icon {
@@ -227,14 +243,18 @@ main .what-astro .options section .icon {
   height: 60px;
   border-radius: 50%;
   margin-bottom: 15px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 main .what-astro .options section .icon .filled {
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.679), rgba(47, 47, 47, 0.622));
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.679),
+    rgba(47, 47, 47, 0.622)
+  );
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -267,14 +287,239 @@ main .what-astro .options section .title {
 
 main .what-astro .options section .description {
   width: 300px;
-  color: #bfc1c9;
-  font-weight: lighter;
-  line-height: 25px;
 }
 
 main .what-astro .options section:nth-child(2) .description {
   width: 320px;
-
 }
 
 /* Main content */
+
+main {
+  .performance {
+    margin-top: 200px !important;
+    margin: auto;
+    max-width: 1200px;
+    /* border: 1px solid red; */
+    position: relative;
+
+    .background {
+      position: absolute;
+      background: linear-gradient(270deg, #40debf4d, #334ba94d);
+      mask-image: radial-gradient(rgba(0, 0, 0, 0.8), transparent 60%);
+      border-radius: 99999px;
+      z-index: -1;
+      transform: scaleY(2.5) scaleX(1.5) rotate(-7deg);
+      opacity: 0.7;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-family: Obviously;
+      font-size: 30px;
+      width: 980px;
+      font-weight: 500;
+      line-height: 40px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      width: 585px;
+    }
+
+    .test-performance {
+      margin-top: 32px;
+      background-color: #0c0f19;
+      border: 1px solid #858b9833;
+      border-radius: 15px;
+      padding: 32px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      p {
+        color: #858b98;
+      }
+
+      .title {
+        margin-bottom: 20px;
+      }
+
+      .graphic {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        h5 {
+          width: 150px;
+          text-align: right;
+          font-size: 20px;
+          font-family: Obviously;
+          font-weight: 500;
+        }
+
+        .test {
+          width: 100%;
+          height: 40px;
+          padding: 3px;
+          border: 1px solid #858b98a7;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .filled {
+            font-size: 20px;
+            display: inline-flex;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(247.23deg, #4af2c8, #2f4cb3);
+            border-radius: 7px;
+
+            svg {
+              margin-left: 10px;
+              align-self: center;
+            }
+          }
+
+          span {
+            background-image: linear-gradient(247.23deg, #4af2c8, #2f4cb3);
+            background-clip: text;
+            color: transparent;
+            font-weight: 600;
+            font-size: 30px;
+          }
+        }
+
+        &:not(:nth-child(2)) .test {
+          .filled {
+            display: inline-flex;
+            width: 100%;
+            height: 100%;
+            background: #343841;
+            border-radius: 7px;
+          }
+
+          span {
+            background: #858b98;
+            background-clip: text;
+            color: transparent;
+            font-weight: 600;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .test-astro .test .filled {
+        width: 65% !important;
+      }
+
+      .test-gatsby .test .filled {
+        width: 44% !important;
+      }
+
+      .test-wordPress .test .filled {
+        width: 43% !important;
+      }
+
+      .test-nextjs .test .filled {
+        width: 28% !important;
+      }
+
+      .test-nuxt .test .filled {
+        width: 26% !important;
+      }
+
+      .reports {
+        width: 100%;
+        margin-top: 20px;
+
+        a {
+          color: #f2f6fa;
+        }
+      }
+    }
+  }
+
+  .frameworks {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 200px !important;
+
+    h3 {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      font-family: Obviously;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      width: 500px;
+      margin-bottom: 30px;
+    }
+
+    .integrate {
+      color: #bfc1c9;
+      background: #2c2c2c4d;
+      padding: 9px 20px;
+      border-radius: 999999px;
+      text-decoration: none;
+      border: 1px solid #858b984d;
+      transition: border 0.5s ease, color 0.5s ease;
+
+      &:hover {
+        border-color: #858b9899;
+        color: #f2f6fa;
+      }
+    }
+
+    .frameworks-rounds {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .round {
+        width: 77px;
+        height: 77px;
+        background: red;
+        border-radius: 50%;
+      }
+
+      .react {
+        background: rgb(97 218 251);
+      }
+
+      .vue {
+        background: rgb(65 184 131);
+      }
+
+      .preact {
+        background: rgb(103 58 184);
+      }
+
+      .svelte {
+        background: rgb(255 62 0);
+      }
+
+      .solid {
+        background: rgb(118 179 225);
+      }
+    }
+  }
+}
