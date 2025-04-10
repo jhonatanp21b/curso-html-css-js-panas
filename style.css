@@ -1,4 +1,3 @@
-/* Nesting o anidamiento */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 @font-face {
@@ -174,128 +173,124 @@ main {
   }
 
   /* sponsor logos */
-}
+  .sponsors {
+    margin-top: 100px;
+    margin-bottom: 200px;
 
-/* sponsors logos */
+    h3 {
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
 
-main .sponsors {
-  margin-top: 100px;
-  margin-bottom: 200px;
-}
+    .sponsors-logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
 
-main .sponsors h3 {
-  text-align: center;
-  font-weight: 300;
-  margin-bottom: 30px;
-  font-size: 16px;
-}
+      svg {
+        width: 130px;
+        /* height: 140px; */
 
-main .sponsors .sponsors-logos {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
+        &:nth-child(5) {
+          width: 200px;
+        }
+      }
+    }
+  }
 
-main .sponsors .sponsors-logos svg {
-  width: 130px;
-  /* height: 140px; */
-}
+  /* what-astro */
+  .what-astro {
+    max-width: 1200px;
+    margin: auto;
 
-main .sponsors .sponsors-logos svg:nth-child(5) {
-  width: 200px;
-}
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+    }
 
-/* what-astro */
+    h2 {
+      font-family: Obviously;
+      font-size: 36px;
+      width: 980px;
+      font-weight: lighter;
+      line-height: 40px;
 
-main .what-astro {
-  /* border: 1px solid red; */
-  max-width: 1200px;
-  margin: auto;
-}
+      .astro {
+        font-weight: 500;
+      }
+    }
 
-main .what-astro h3 {
-  font-size: 16px;
-  font-weight: 500;
-}
+    .options {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 120px;
+      margin-top: 25px;
 
-main .what-astro h2 {
-  font-family: Obviously;
-  font-size: 36px;
-  width: 980px;
-  font-weight: lighter;
-  line-height: 40px;
-}
+      section {
+        .title {
+          font-weight: 500;
+        }
 
-main .what-astro h2 .astro {
-  font-weight: 500;
-}
+        .description {
+          width: 300px;
+        }
 
-main .what-astro .options {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 120px;
-  margin-top: 25px;
-}
+        .icon {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin-bottom: 15px;
 
-main .what-astro .options section .icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+          svg {
+            width: 30px;
+            height: 30px;
+          }
 
-main .what-astro .options section .icon .filled {
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(0, 0, 0, 0.679),
-    rgba(47, 47, 47, 0.622)
-  );
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
+          .filled {
+            background-image: linear-gradient(
+              to bottom right,
+              rgba(0, 0, 0, 0.679),
+              rgba(47, 47, 47, 0.622)
+            );
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
 
-main .what-astro .options section:nth-child(1) .icon {
-  background-image: linear-gradient(247.23deg, #4af2c8, #2f4cb3);
-}
+      section:nth-child(1) .icon {
+        background-image: linear-gradient(247.23deg, #4af2c8, #2f4cb3);
+      }
 
-main .what-astro .options section:nth-child(2) .icon {
-  background-image: linear-gradient(66.77deg, #d83333, #f041ff);
-}
+      section:nth-child(2) {
+        .icon {
+          background-image: linear-gradient(66.77deg, #d83333, #f041ff);
+        }
 
-main .what-astro .options section:nth-child(3) .icon {
-  background-image: linear-gradient(266.93deg, #f8e42e, #ff7d54);
-}
+        .description {
+          width: 320px;
+        }
+      }
 
-main .what-astro .options .icon svg {
-  width: 30px;
-  height: 30px;
-}
+      section:nth-child(3) .icon {
+        background-image: linear-gradient(266.93deg, #f8e42e, #ff7d54);
+      }
+    }
+  }
 
-main .what-astro .options section .title {
-  font-weight: 500;
-}
-
-main .what-astro .options section .description {
-  width: 300px;
-}
-
-main .what-astro .options section:nth-child(2) .description {
-  width: 320px;
-}
-
-/* Main content */
-
-main {
+  /* Performance */
   .performance {
     margin-top: 200px !important;
     margin: auto;
@@ -450,6 +445,7 @@ main {
     }
   }
 
+  /* Frameworks */
   .frameworks {
     max-width: 1200px;
     margin: auto;
